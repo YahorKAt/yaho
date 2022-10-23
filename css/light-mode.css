@@ -1,0 +1,95 @@
+.text_white_bold {
+    color: rgb(17, 24, 39);
+}
+
+.background {
+    background-color: white;
+}
+
+.background_main {
+    background: white;
+}
+
+.search_color {
+    background-color: rgb(243, 244, 246);
+}
+
+.table_row:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.text_32 {
+    color: rgb(17, 24, 39);
+}
+
+.line_color {
+    color: rgb(229, 231, 235);
+}
+
+.theme_btn:hover {
+    border-radius: 10px;
+    background-color: rgb(229, 231, 235);
+}
+
+.color_change_currency:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.button_add_asset:hover {
+    border-radius: 10px;
+    background-color: rgb(229, 231, 235);
+}
+.button_layout:hover {
+    border-radius: 10px;
+    background-color: rgb(229, 231, 235);
+}
+.search_form_field {
+    color: rgb(229, 231, 235);
+}
+
+.text_search {
+    color: rgb(113, 113, 122);
+}
+.change_pic {
+    display: inline-block;
+    background: black;
+    -webkit-mask-image: url(/icons/heroicons/solid/moon.svg);
+    mask-image: url(/icons/heroicons/solid/moon.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.btn_wrp_add,
+.btn_wrp_layout {
+    background: rgb(17, 24, 39);
+}
+
+.logo_text,
+.footer_text {
+    background: rgb(17, 24, 39);
+}
+
+.btn_login_main:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.login {
+    color: rgb(17, 24, 39);
+}
+
+.log_menu_color {
+    background: white;
+}
+
+.log_color_text {
+    color: rgb(17, 24, 39);
+}
+
+.input_color {
+    background-color: white;
+    border: 1px solid rgb(229, 231, 235);
+}
+
+.btn_close:hover {
+    background-color: rgb(229, 231, 235);
+}

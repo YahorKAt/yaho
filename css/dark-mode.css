@@ -1,0 +1,92 @@
+.text_white_bold {
+    color: rgb(255, 255, 255);
+}
+
+.background {
+    background: rgb(39, 39, 42);
+}
+
+.background_main {
+    background: rgb(23, 26, 32);
+}
+
+.search_color {
+    background-color: rgb(53, 53, 61);
+}
+
+.table_row:hover {
+    background-color: rgb(63, 63, 70);
+}
+
+.text_32 {
+    color: rgb(255, 255, 255);
+}
+
+.line_color {
+    color: rgb(63, 63, 70);
+}
+
+.theme_btn:hover {
+    border-radius: 10px;
+    background-color: rgb(53, 53, 61);
+}
+
+.color_change_currency:hover {
+    background-color: rgb(53, 53, 61);
+}
+
+.button_add_asset:hover {
+    border-radius: 10px;
+    background-color: rgb(53, 53, 61);
+}
+.button_layout:hover {
+    border-radius: 10px;
+    background-color: rgb(53, 53, 61);
+}
+
+.search_form_field {
+    color: rgb(53, 53, 61);
+}
+
+.text_search {
+    color: rgb(156, 163, 175);
+}
+
+.change_pic {
+    display: inline-block;
+    background: rgb(156, 163, 175);
+    -webkit-mask-image: url(/icons/heroicons/solid/sun.svg);
+    mask-image: url(/icons/heroicons/solid/sun.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.btn_wrp_add,
+.btn_wrp_layout {
+    background: rgb(156, 163, 175);
+}
+
+.logo_text,
+.footer_text {
+    background: rgb(156, 163, 175);
+}
+
+.btn_login_main:hover {
+    background-color: rgb(53, 53, 61);
+}
+
+.log_menu_color {
+    background: rgb(39, 39, 42);
+}
+
+.log_color_text {
+    color: white;
+}
+
+.input_color {
+    background-color: rgb(63, 63, 70);
+}
+
+.btn_close:hover {
+    background-color: rgb(53, 53, 61);
+}

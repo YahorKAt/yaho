@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAHO</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="theme">
+</head>
+
+<body>
+    <header class="header background line_color">
+        <div class="border_line  line_color">
+            <div class="wrapper_info">
+                <!-- Начало шапки с дневными данными -->
+                <!-- Нужно будет сделать автоматическое обновление данных через API -->
+                <div class="conteiner_info">
+                    <div class="header_list">
+                        <ul class="header_item">
+                            <li class="conteiner_item">Market Cap:</li>
+                            <li class="conteiner_value text_white_bold">962.43 B USD</li>
+                            <li class="conteiner_change">-0.46%</li>
+                        </ul>
+                        <ul class="header_item">
+                            <li class="conteiner_item">24h Volume:</li>
+                            <li class="conteiner_value text_white_bold">1.47 T USD</li>
+                            <li class="conteiner_change">-3.40%</li>
+                        </ul>
+                        <ul class="header_item">
+                            <li class="conteiner_item">BTC Dominance:</li>
+                            <li class="conteiner_value text_white_bold">38.40%</li>
+                        </ul>
+                        <ul class="header_item">
+                            <li class="conteiner_item">ETH Gas:</li>
+                            <li class="conteiner_value text_white_bold">5 Gwei</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="conteiner_change_currency_theme">
+                    <div class="wrapper_theme">
+                        <select class="currency text_white_bold color_change_currency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                        <button class="theme_btn" id="switchMode">
+                            <span class="btn_wrp_theme">
+                                <span class="change_pic">
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец шапки с дневными данными -->
+        <!-- Начало меню с поиском -->
+        <div class=" wrapper_menu">
+            <nav class="header_nav">
+                <ul class="nav_list">
+                    <li>
+                        <a href="" class="header_logo">
+                            <div class="logo_pic">
+                                <img class="header_logo-pic" src="./images/dropstab-logo-drop-default.svg"
+                                    alt="DropStab">
+                                <span class="logo_text">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="projects.html" class="nav_link text_white_bold">
+                            Projects
+                            <span class="bord_line_botton">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="account_data.html" class="nav_link text_white_bold"> Account Data
+                            <span class="bord_line_botton">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="portfolio.html" class="nav_link text_white_bold">Portfolio
+                            <span class="bord_line_botton">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login_search">
+                <div class="wrp_login-sing">
+                    <div class="login-sing">
+
+                        <!--  -->
+
+                        <div id="zatemnenie">
+                            <div id="okno">
+                                <section class="log_menu log_menu_color" role="dialog">
+                                    <h3 class="wrp_close_lb">
+                                        <div class="label_login log_color_text">Login</div>
+                                        <button class="btn_close">
+                                            <span class="wrp_close ">
+                                                <a href="#" class="close_window log_color_text">X</a>
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <form class="wrp_log">
+                                        <label class="email_block">
+                                            <span class="email_label log_color_text">Email</span>
+                                            <input class="input_email input_color  log_color_text" type="email"
+                                                inputmode="email" autocomplete="email" name="email" placeholder="Email">
+                                        </label>
+                                        <div class="wrp_password">
+                                            <label class="password_block">
+                                                <span class="password_label log_color_text">Password</span>
+                                                <input class="input_password input_color log_color_text" type="password"
+                                                    inputmode="password" autocomplete="current-password" name="password"
+                                                    placeholder="Password">
+                                            </label>
+                                        </div>
+                                        <button class="wrp_btn_login" type="submit">
+                                            <a href="#" class="btn_login">Login</a>
+                                        </button>
+                                        <div class="create_new log_color_text">Don’t have an Account yet?
+                                            <button class="btn_create_new" type="button">
+                                                <a class="link_create_new" href="#">Create now</a>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <button class="btn_login_main">
+                            <span><a class="login" href="#zatemnenie">Log in</a></span>
+                        </button>
+                        <button class="btn_sign_up">
+                            <span class="sing_up">Sing up</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="search_form">
+                    <button class="search_form_info">
+                        <span type="button" class="search_form_field search_color">
+                            <span class="search_icon"></span>
+                            <span class="text_search">Search</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Конец меню с поиском -->
+    </header>
+
+    <main class="main">
+        <div class="wrapper_main background_main">
+            <div class="table">
+                <div class="name_table">
+                    <h1 class="intro_title text_32">
+                        Accounts Data
+                    </h1>
+                </div>
+                <div class="filter_table">
+                    <button class="button_add_asset text_white_bold">
+                        <span class="btn_wrp">
+                            <span class="btn_wrp_add">
+                            </span>
+                            <span class="btn_filter_text">
+                                Add Asset
+                            </span>
+                        </span>
+                    </button>
+                    <button class="button_layout text_white_bold">
+                        <span class="btn_wrp">
+                            <span class="btn_wrp_layout">
+                            </span>
+                            <span class="btn_filter_text">
+                                Layout
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="all_table line_color">
+                    <table class="wrp_table">
+                        <thead class="header_table">
+                            <tr class="header_row">
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            #
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Name
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Browser
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Email
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Twitter
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Discord
+                                        </span>
+                                    </button>
+                                </th>
+                                <th class="h_tb">
+                                    <button class="btn_action_sort text_white_bold">
+                                        <span>
+                                            Telegram
+                                        </span>
+                                    </button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="body_table">
+                            <tr class="table_row">
+                                <td class="group_style_row line_color h_tb_number">
+                                    <span class="text_white_bold">1</span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_price">
+                                    <a class="ref" href="">
+                                        <span class="font_price">Test#1</span>
+                                    </a>
+                                </td>
+                                <td class="group_style_row line_color h_tb_asset">
+                                    <div class="ref">
+                                        <div class="item_flex">
+                                            <div class="block_img">
+                                                <span class="img_coin"><img class="coin_icon"
+                                                        src="./icons/coins/browser/chrome.svg" alt="Ethereum"
+                                                        height="24"></span>
+                                            </div>
+                                            <div class="block_name">
+                                                <div class="tiker text_white_bold">
+                                                    Chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="group_style_row line_color h_tb_market_cap">
+                                    <span id="copyText"
+                                        class="text_copy_link text_white_bold">elena.kotkovec1974@gmail.com
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_circ_supply">
+                                    <span class="text_white_bold">@EKotk1222
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_fdv">
+                                    <span class="text_white_bold">ElenaKotk#8644
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_ico">
+                                    <span class="text_white_bold">-</span>
+                                </td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="group_style_row line_color h_tb_number">
+                                    <span class="text_white_bold">2</span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_price">
+                                    <a class="ref" href="">
+                                        <span class="font_price">Test#2</span>
+                                    </a>
+                                </td>
+                                <td class="group_style_row line_color h_tb_asset">
+                                    <div class="ref">
+                                        <div class="item_flex">
+                                            <div class="block_img">
+                                                <span class="img_coin"><img class="coin_icon"
+                                                        src="./icons/coins/browser/opera.svg" alt="Polkadot"
+                                                        height="24"></span>
+                                            </div>
+                                            <div class="block_name">
+                                                <div class="tiker text_white_bold">
+                                                    Opera
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="group_style_row line_color h_tb_market_cap">
+                                    <span class="text_white_bold">yahorkatkov@gmail.com
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_circ_supply">
+                                    <span class="text_white_bold">@KatkYahor
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_fdv">
+                                    <span class="text_white_bold">Serg1#4725
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_ico">
+                                    <span class="text_white_bold">-</span>
+                                </td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="group_style_row line_color h_tb_number">
+                                    <span class="text_white_bold">3</span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_price">
+                                    <a class="ref" href="">
+                                        <span class="font_price">Test#3</span>
+                                    </a>
+                                </td>
+                                <td class="group_style_row line_color h_tb_asset">
+                                    <div class="ref">
+                                        <div class="item_flex">
+                                            <div class="block_img">
+                                                <span class="img_coin"><img class="coin_icon"
+                                                        src="./icons/coins/browser/edge.svg" alt="Polkadot"
+                                                        height="24"></span>
+                                            </div>
+                                            <div class="block_name">
+                                                <div class="tiker text_white_bold">
+                                                    Edge
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="group_style_row line_color h_tb_market_cap">
+                                    <span class="text_white_bold">yahokatk@mail.ru
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_circ_supply">
+                                    <span class="text_white_bold">@NikolaTesla255
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_fdv">
+                                    <span class="text_white_bold">yaho12345#2154
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_ico">
+                                    <span class="text_white_bold">-</span>
+                                </td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="group_style_row line_color h_tb_number">
+                                    <span class="text_white_bold">4</span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_price">
+                                    <a class="ref" href="">
+                                        <span class="font_price">Test#4</span>
+                                    </a>
+                                </td>
+                                <td class="group_style_row line_color h_tb_asset">
+                                    <div class="ref">
+                                        <div class="item_flex">
+                                            <div class="block_img">
+                                                <span class="img_coin"><img class="coin_icon"
+                                                        src="./icons/coins/browser/firefox.svg" alt="Polkadot"
+                                                        height="24"></span>
+                                            </div>
+                                            <div class="block_name">
+                                                <div class="tiker text_white_bold">
+                                                    Mozila
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="group_style_row line_color h_tb_market_cap">
+                                    <span class="text_white_bold">elenakotk1@mail.ru
+                                    </span>
+
+                                </td>
+                                <td class="group_style_row line_color h_tb_circ_supply">
+                                    <span class="text_white_bold">@Sergo18624122
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_fdv">
+                                    <span class="text_white_bold">lena1974#2457
+                                    </span>
+                                </td>
+                                <td class="group_style_row line_color h_tb_ico">
+                                    <span class="text_white_bold">-</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Table end -->
+        </div>
+
+
+    </main>
+    <!-- Footer start -->
+
+    <footer class="footer background">
+        <div class="wrp_footer">
+            <div class="logo_with_about">
+                <div class="cont">
+                    <div class="footer_logo">
+                        <img src="./images/dropstab-logo-drop-default.svg" alt="Logo" class="footer_logo_pic">
+                        <span class="footer_text">
+                        </span>
+                    </div>
+                    <p class="made_with text_white_bold">Made with love fot the Decentralized World.</p>
+                    <p class="more_information">DropsTab is an independent market cap website <br> and is not affiliated
+                        with any project or <br> company. There is no financial or investment <br> advice.</p>
+                </div>
+                <p class="copywritting">© 2022 DropsTab. All rights reserved</p>
+            </div>
+            <section class="chapters">
+                <h1 class="title">
+                    Services
+                </h1>
+                <ul class="chapter">
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Coins</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Exchanges</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Insights</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Watchlist</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Portfolio</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Products</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="chapters">
+                <h1 class="title">
+                    Social
+                </h1>
+                <ul class="chapter">
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Email</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Twitter</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Telegram RU</a>
+                    </li>
+                    <li class="item_chapter">
+                        <a class="link text_white_bold" href="">Telegram EN</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="chapters">
+                <h1 class="title">
+                    Support
+                </h1>
+                <ul class="chapter">
+                    <div class="item_chapter">
+                        <a class="link text_white_bold" href="">Request form</a>
+                    </div>
+                    <div class="item_chapter">
+                        <a class="link text_white_bold" href="">Privacy policy</a>
+                    </div>
+                    <div class="item_chapter">
+                        <a class="link text_white_bold" href="">Terms of use</a>
+                    </div>
+                    <div class="item_chapter">
+                        <a class="link text_white_bold" href="">Disclaimer</a>
+                    </div>
+                </ul>
+            </section>
+            <div class="chapters_last">
+                <section class="chapter_products">
+                    <h1 class="title">
+                        Products
+                    </h1>
+                    <ul class="chapter">
+                        <li class="item_chapter">
+                            <a class="link text_white_bold" href="">Modile App</a>
+                        </li>
+                        <li class="item_chapter">
+                            <a class="link text_white_bold" href="">EtherDrop Bot</a>
+                        </li>
+                        <li class="item_chapter">
+                            <a class="link text_white_bold" href="">Analytics</a>
+                        </li>
+                </section>
+                <section class="title">
+                    <h1 class="download_text">Download our App</h1>
+                    <ul class="wrp_download">
+                        <li>
+                            <a href="" class="download_ref"> <img src="./icons/google-play-badge.svg"
+                                    class="icon_download" alt="Play_market">
+                            </a>
+                        </li>
+                        <li class="ml-download">
+                            <a href="" class="download_ref"> <img src="./icons/app-store-badge.svg"
+                                    class="icon_download" alt="App_store">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+    <!-- Footer end -->
+</body>
+
+</html>
